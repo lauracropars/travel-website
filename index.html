@@ -1,38 +1,106 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" dir="ltr">
 
 	<head>
 	
 	<!---meta--->
+	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<!---css--->
-	<link rel="styles.css">
+	
+	<link rel="stylesheet" href="index.css">
+	
+	<!-- Google fonts -->
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"rel="stylesheet">
 
 	<!---favicon--->
+	
 	<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 	
 	<!---title--->  
+	
 	<title>Frontend Mentor | Space tourism website</title>
 	  
 	</head>
 	
-<body>
+<body class="home-bg">
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+	<!---header--->
 
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!
+	<header class="primary-header">
+	
+		<div class="flex" style="justify-content: space-between; margin-top: 64px;">
+		
+			<!---logo--->
+			
+			<div class="grid" style="place-items: center; flex-grow: 1;">
+			
+				<a href="#">
+					<img src="assets/shared/logo.svg" alt="Logo" class="space tourism logo">
+				</a>
+				
+			</div>
+			
+			<!---line--->
+			
+			<div style="align-self: center" style="flex-grow: 2;">
+			
+				<hr class="nav-hr">
+				
+			</div>
+			
+			<!---nav--->
+			
+			<button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expended="false">Menu</span></button>
+		
+			<nav>
+			
+				<ul id="primary-navigation" class="primary-navigation underline-indicators flex">
+				
+					<li class="active"><a class="uppercase text-white letter-spacing-2 ff-sans-cond fs-300" href="index.html"><span>01</span>Home</a>
+					<li><a class="uppercase text-white letter-spacing-2 ff-sans-cond fs-300" href="destination.html"><span>02</span>Destination</a>
+					<li><a class="uppercase text-white letter-spacing-2 ff-sans-cond fs-300" href="crew.html"><span>03</span>Crew</a>
+					<li><a class="uppercase text-white letter-spacing-2 ff-sans-cond fs-300" href="technology.html"><span>03</span>Technology</a>
+					
+				</ul>
+				
+			</nav>
+			
+		</div>
+	
+	</header>
+	
+	<!---main--->
+	
+		<div class="grid-container grid-container--home">
+	
+			<div>
+			
+				<!--- h1 title--->
 
-  Explore
-
+				<h1 class="fs-500 text-accent ff-sans-cond uppercase letter-spacing-1">So, you want to travel to 
+				<span class="fs-900 ff-serif uppercase text-white d-block" style="line-height: 1.2em;">Space</span></h1>
+		
+					<p class="text-accent" style="line-height: 2em; max-width: 450px;">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience !</p>
+						
+			</div>
+				
+			<!---explore button--->
+				
+			<div>
+					
+				<a href="#" class="large-button uppercase ff-serif text-dark bg-white" style="width: 8em; height: 8em; margin: auto;">Explore</a>
+						
+			</div>
+		
+		</div>
+	
 </body>
+
 </html>

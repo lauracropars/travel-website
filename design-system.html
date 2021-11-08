@@ -107,42 +107,50 @@
                 <div>
                     <nav class="flex">
                         <ul class="primary-navigation underline-indicators flex">
-                            <li class="active"><a class="uppercase text-white letter-spacing-2" href="#"><span>01</span>Active</a>
-                            <li><a class="uppercase text-white letter-spacing-2" href="#"><span>02</span>Hovered</a>
-                            <li><a class="uppercase text-white letter-spacing-2" href="#"><span>03</span>Idle</a>
+                            <li class="active"><a class="uppercase text-white letter-spacing-2 ff-sans-cond" href="#"><span>01</span>Active</a>
+                            <li><a class="uppercase text-white letter-spacing-2 ff-sans-cond" href="#"><span>02</span>Hovered</a>
+                            <li><a class="uppercase text-white letter-spacing-2 ff-sans-cond" href="#"><span>03</span>Idle</a>
                         </ul>
                     </nav>
+					
+						<p class="description" style="margin-top: 2em;">Different States of Navigation Bar</p>
                 </div>
                 
-                <div class="flex">
-                    <div class="flow" style="margin-top: 5rem">
+                <div class="flex" style="justify-content: space-around; margin-top: 5rem;">
+                    <div class="flow">
                         <!-- explore button -->
                         <a href="#" class="large-button uppercase ff-serif fs-600 text-dark bg-white">Explore</a>
-						<a href="#" class="large-button uppercase ff-serif fs-600 text-dark bg-white .hover">Explore</a>
+							<p class="description">Landing Page Main Button - Idle</p>
+						
+						<a href="#" class="large-button uppercase ff-serif fs-600 text-dark bg-white" style="margin-top: 4em;">Explore</a>
+							<p class="description" style="margin-top: 4em;">Landing Page Main Button - Hover</p>
                     </div>
                     
-                    <div class="flow" style="--flow-space: 4rem">
+                    <div class="flow" style="--flow-space: 4.1rem">
                         <!-- Tabs -->
                         <div class="tab-list underline-indicators flex">
                             <button aria-selected="true" class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Moon</button>
                             <button aria-selected="false" class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Mars</button>
                             <button aria-selected="false" class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Europa</button>
                         </div>
+						<p class="description">Tabs (Active, Hover, & Idle)</p>
                         
                         <!-- Dots -->
-                        <div class="dot-indicators flex">
+                        <div class="dot-indicators flex" style="justify-content: center;">
                             <button aria-selected="true"><span class="sr-only">Slide title</span></button>
                             <button aria-selected="false"><span class="sr-only">Slide title</span></button>
                             <button aria-selected="false"><span class="sr-only">Slide title</span></button>
                         </div>
+						<p class="description">Slider 1 States (Active, Hover, & Idle)</p>
                         
                         <!-- Numbers -->
 						
-						<div class="number-indicators flex" style="flex-direction: column">
+						<div class="number-indicators flex" style="--gap: 2rem;">
                             <button aria-selected="true" class="ff-serif fs-600">1</a></button>
                             <button aria-selected="false" class="ff-serif fs-600">2</a></button>
                             <button aria-selected="false" class="ff-serif fs-600">3</a></button>
                         </div>
+						<p class="description">Slider 2 States (Active, Hover, & Idle)</p>
 						
                     </div>
                 </div>
@@ -152,6 +160,7 @@
         </div>
         
 		<footer>
+			<img src="assets/crew/background-crew-desktop.jpg" alt="Planète Terre" class="footer-image">
 		</footer>
 		
         <script src="index.pack.js"></script>
