@@ -26,32 +26,28 @@
 	<!---title--->  
 	
 	<title>Frontend Mentor | Space tourism website</title>
+	
+	<!---js--->
+	
+	<script src="index.js" defer></script>
 	  
 	</head>
 	
 <body class="home-bg">
 
+	 <a class="skip-to-content" href="#main">Skip to content</a>
+
 	<!---header--->
 
-	<header class="primary-header">
-	
-		<div class="flex" style="justify-content: space-between; margin-top: 64px;">
+	<header class="primary-header flex">
 		
 			<!---logo--->
 			
-			<div class="grid" style="place-items: center; flex-grow: 1;">
+			<div>
 			
-				<a href="#">
-					<img src="assets/shared/logo.svg" alt="Logo" class="space tourism logo">
+				<a href="index.html">
+					<img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
 				</a>
-				
-			</div>
-			
-			<!---line--->
-			
-			<div style="align-self: center" style="flex-grow: 2;">
-			
-				<hr class="nav-hr">
 				
 			</div>
 			
@@ -61,16 +57,18 @@
 		
 			<nav>
 			
-				<ul id="primary-navigation" class="primary-navigation underline-indicators flex">
+				<ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
 				
-					<li class="active"><a class="uppercase text-white letter-spacing-2 ff-sans-cond fs-300" href="index.html"><span>01</span>Home</a>
-					<li><a class="uppercase text-white letter-spacing-2 ff-sans-cond fs-300" href="destination.html"><span>02</span>Destination</a>
-					<li><a class="uppercase text-white letter-spacing-2 ff-sans-cond fs-300" href="crew.html"><span>03</span>Crew</a>
-					<li><a class="uppercase text-white letter-spacing-2 ff-sans-cond fs-300" href="technology.html"><span>03</span>Technology</a>
+					<li class="active"><a class="uppercase text-white letter-spacing-2 ff-sans-cond fs-300" href="index.html"><span aria-hidden="true">00</span>Home</a>
+					<li><a class="uppercase text-white letter-spacing-2 ff-sans-cond fs-300" href="destination.html"><span aria-hidden="true">01</span>Destination</a>
+					<li><a class="uppercase text-white letter-spacing-2 ff-sans-cond fs-300" href="crew.html"><span aria-hidden="true">02</span>Crew</a>
+					<li><a class="uppercase text-white letter-spacing-2 ff-sans-cond fs-300" href="technology.html"><span aria-hidden="true">03</span>Technology</a>
 					
 				</ul>
 				
 			</nav>
+			
+			<!---my ::after is here--->
 			
 		</div>
 	
@@ -78,9 +76,9 @@
 	
 	<!---main--->
 	
-		<div class="grid-container grid-container--home">
+		<main id="main" class="grid-container grid-container--home">
 	
-			<div>
+			<div class="grid" style="--gap: 1.5rem; justify-items: center">
 			
 				<!--- h1 title--->
 
@@ -94,12 +92,12 @@
 			<!---explore button--->
 				
 			<div>
-					
-				<a href="#" class="large-button uppercase ff-serif text-dark bg-white" style="width: 8em; height: 8em; margin: auto;">Explore</a>
-						
+			
+				<a href="destination.html" class="large-button uppercase ff-serif text-dark bg-white" style="font-size: clamp(1.5em, 1.2vw + 1rem, 2.3rem);">Explore</a>
+				
 			</div>
 		
-		</div>
+		</main>
 	
 </body>
 

@@ -1,112 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-	  <meta charset="UTF-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+<html lang="en">
+
+	<head>
+	
+		<!---meta--->
+	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!---favicon--->
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 			
-	<!-- Google fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"rel="stylesheet">
+		<!-- Google fonts -->
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"rel="stylesheet">
 				
-	<link rel="stylesheet" href="index.css">
+		<!---css--->
+		
+		<link rel="stylesheet" href="index.css">
+		
+		<!---title--->
 			 
 		<title>Design system</title>
 
-			<style>
-				
-			</style>
     </head>
 
 <body>
         
+		<!---container--->
+		
         <div class="container flow">
 		
 			<div class="flex" style="justify-content: space-between; margin-top: 64px;">
+			
+				<!---logo and h1--->
 			
 				<img src="assets/shared/logo.svg" alt="Logo">
 				<h1 class="uppercase text-accent ff-sans-cond" style="font-size: 24px; letter-spacing: 4.05px;">Design system</h1>
 				
 			</div>
+			
+			<!---colors--->
             
             <section class="flow" id="colors" style="margin: 4rem 0">
+			
                 <h2 class="numbered-title"><span>01</span> colors</h2>
+				
                 <div class="flex">
+				
+					<!---color 1--->
+				
                     <div class="flow" style="flex-grow: 1;">
+					
                         <div class="bg-dark text-white ff-serif fs-500" style="padding: 3rem 1rem 1rem; border: 1px solid white">#0B0D17</div>
                         <p class="color-type"><span class="text-accent">RGB</span> 11, 13, 23</p>
                         <p class="color-type"><span class="text-accent">HSL</span> 230°, 35%, 7%</p>
+						
                     </div>
+					
+					<!---color 2--->
+					
                     <div class="flow" style="flex-grow: 1;">
+					
                         <div class="bg-accent text-dark ff-serif fs-500" style="padding: 3rem 1rem 1rem; border: 1px solid white">#D0D6F9</div>
                         <p class="color-type"><span class="text-accent">RGB</span> 208, 214, 249</p>
                         <p class="color-type"><span class="text-accent">HSL</span> 231°, 77%, 90%</p>
+						
                     </div>
+					
+					<!---color 3--->
+					
                     <div class="flow" style="flex-grow: 1;">
+					
                         <div class="bg-white text-dark ff-serif fs-500" style="padding: 3rem 1rem 1rem; border: 1px solid white;">#FFFFFF</div>
                         <p class="color-type"><span class="text-accent">RGB</span> 255, 255, 255</p>
                         <p class="color-type"><span class="text-accent">HSL</span> 0°, 0%, 100%</p>
+						
                     </div>
+					
                 </div>
+				
             </section>
+			
+			<!---typography--->
             
             <section class="flow" id="typography"  style="margin: 4rem 0">
+			
                 <h2 class="numbered-title"><span>02 </span>Typography</h2>
+				
                 <div class="flex">
+				
+					<!---column 1--->
+				
                     <div class="flow" style="flex-basis: 100%; --flow-space: 4rem;">
+					
+						<!---heading 1--->
+					
                         <div> 
                             <p class="text-accent">Heading 1 - Bellefair Regular - 150px</p>
                             <p class="fs-900 ff-serif uppercase">Earth</p> 
                         </div>
+						
+						<!---heading 2--->
+						
                         <div> 
                             <p class="text-accent">Heading 2 - Bellefair Regular - 100px</p>
                             <p class="fs-800 ff-serif uppercase">Venus</p>
                         </div>
+						
+						<!---heading 3--->
+						
                         <div> 
                             <p class="text-accent">Heading 3 - Bellefair Regular - 56px</p>
                             <p class="fs-700 ff-serif uppercase">Jupiter & Saturn</p>
                         </div>
+						
+						<!---heading 4--->
+						
                         <div> 
                             <p class="text-accent">Heading 4 - Bellefair Regular - 32px</p>
                             <p class="fs-600 ff-serif uppercase">Uranus, Neptune, & Pluto</p>
                         </div> 
+						
+						<!---heading 5--->
+						
                         <div> 
                             <p class="text-accent">Heading 5 - Barlow Condensed Regular - 28px - 4.75 Character Space</p>
                             <p class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">So, you want to travel to space</p>
                         </div>
                     
                     </div>
+					
+					<!---column 2--->
                     
                     <div class="flow" style="flex-basis: 100%; --flow-space: 4rem;">
+					
+						<!---subheading 1--->
+					
                         <div> 
                             <p class="text-accent">Subheading 1 - Bellefair Regular - 28px</p>
                             <p class="fs-500 ff-serif uppercase">384,400 km</p>
                         </div>
+						
+						<!---subheading 2--->
+						
                         <div> 
                             <p class="text-accent">Subheading 2 - Barlow Condensed Regular - 14px - 2.35 Character Space</p>
                             <p class="fs-200 uppercase ff-sans-cond letter-spacing-3">Avg. Distance</p>
                         </div>
+						
+						<!---nav text--->
+						
                         <div> 
                             <p class="text-accent">Nav Text - Barlow Condensed Regular - 16px - 2.7 Character Space</p>
                             <p class="fs-300 uppercase ff-sans-cond letter-spacing-2">Europa</p>
                         </div>
+						
+						<!---body text--->
+						
                         <div> 
                             <p class="text-accent">Body Text</p>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. </p>
                         </div> 
+						
                     </div>
+					
                 </div>
+				
             </section>
+			
+			<!---interactive elements--->
             
             <section class="flow" id="interactive-elements">
+			
                 <h2 class="numbered-title"><span>03</span> Interactive elements</h2>
                 
                 <!-- navigation -->
+				
                 <div>
+				
                     <nav class="flex">
-                        <ul class="primary-navigation underline-indicators flex">
+                        <ul class="primary-navigation underline-indicators flex" style="--gap: 8rem;">
                             <li class="active"><a class="uppercase text-white letter-spacing-2 ff-sans-cond" href="#"><span>01</span>Active</a>
                             <li><a class="uppercase text-white letter-spacing-2 ff-sans-cond" href="#"><span>02</span>Hovered</a>
                             <li><a class="uppercase text-white letter-spacing-2 ff-sans-cond" href="#"><span>03</span>Idle</a>
@@ -115,54 +193,75 @@
 					
 						<p class="description" style="margin-top: 2em;">Different States of Navigation Bar</p>
                 </div>
+				
+				<!---explore buttons--->
                 
                 <div class="flex" style="justify-content: space-around; margin-top: 5rem;">
+				
                     <div class="flow">
-                        <!-- explore button -->
+					
+                        <!---explore button 1--->
+						
                         <a href="#" class="large-button uppercase ff-serif fs-600 text-dark bg-white">Explore</a>
 							<p class="description">Landing Page Main Button - Idle</p>
+							
+						<!---explore button 2--->
 						
 						<a href="#" class="large-button uppercase ff-serif fs-600 text-dark bg-white" style="margin-top: 4em;">Explore</a>
 							<p class="description" style="margin-top: 4em;">Landing Page Main Button - Hover</p>
                     </div>
+					
+					<!---indicators--->
                     
                     <div class="flow" style="--flow-space: 4.1rem">
-                        <!-- Tabs -->
+					
+                        <!---tabs--->
+						
                         <div class="tab-list underline-indicators flex">
                             <button aria-selected="true" class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Moon</button>
                             <button aria-selected="false" class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Mars</button>
                             <button aria-selected="false" class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Europa</button>
                         </div>
+						
 						<p class="description">Tabs (Active, Hover, & Idle)</p>
                         
-                        <!-- Dots -->
+                        <!---dots--->
                         <div class="dot-indicators flex" style="justify-content: center;">
                             <button aria-selected="true"><span class="sr-only">Slide title</span></button>
                             <button aria-selected="false"><span class="sr-only">Slide title</span></button>
                             <button aria-selected="false"><span class="sr-only">Slide title</span></button>
                         </div>
+						
 						<p class="description">Slider 1 States (Active, Hover, & Idle)</p>
                         
-                        <!-- Numbers -->
+                        <!---numbers--->
 						
 						<div class="number-indicators flex" style="--gap: 2rem;">
                             <button aria-selected="true" class="ff-serif fs-600">1</a></button>
                             <button aria-selected="false" class="ff-serif fs-600">2</a></button>
                             <button aria-selected="false" class="ff-serif fs-600">3</a></button>
                         </div>
+						
 						<p class="description">Slider 2 States (Active, Hover, & Idle)</p>
 						
                     </div>
+					
                 </div>
                 
             </section>
             
         </div>
+		
+		<!---footer--->
         
 		<footer>
 			<img src="assets/crew/background-crew-desktop.jpg" alt="Planète Terre" class="footer-image">
 		</footer>
 		
+		<!---js--->
+		
         <script src="index.pack.js"></script>
+		
     </body>
+	
 </html> 
